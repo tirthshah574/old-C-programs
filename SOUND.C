@@ -1,0 +1,29 @@
+#include<dos.h>
+#include<stdio.h>
+main()
+
+{
+	int i,j,k;
+	clrscr();
+	for(j=0;j<6;j++)
+	{
+	if(j%2==0)
+	{
+	for(i=20;i<=2000;i++)
+	{
+		sound(i);
+		delay(1);
+	}
+	}
+	else
+	{
+	for(i=2000;i>=20;i--)
+	{
+		sound(i);
+		delay(1);
+	}
+	}
+	}
+	nosound();
+	getch();
+}

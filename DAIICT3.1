@@ -1,0 +1,32 @@
+//Display digits individually(e.g. 45677 = 4 5 6 7 7)
+#include<stdio.h>
+main()
+{
+	int n,r,a,b=1,c,d,x,y,z;
+	clrscr();
+
+	printf("Enter the number:");
+	scanf("%d",&n);
+	a=n;
+	while(a!=0)
+
+	{
+		x=a%10;
+		a=a/10;
+		b=b*10;
+	}
+
+	b=b/10;
+	y=b;
+
+	while(n>0)
+	{
+		c=n/y;
+		printf(" %d",c);
+		n=n%y;
+		y=y/10;
+	}
+
+	//Use this if u dont understand > printf("%d",b); <
+	getch();
+}

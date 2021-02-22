@@ -1,0 +1,67 @@
+	x=r;
+	y=getch();
+	clrscr();
+	if(y=='w'&&r-20!=q)
+	{
+
+	{
+	for(i=0;i<400;i++)
+	{
+		t[i]='\0';
+	}
+	i=-1;
+	for(z=0;z<77;z++)
+	{
+		if(z<20)
+		i++;
+		else if(z>19&&z<39)
+		i+=20;
+		else if(z>38&&z<58)
+		i--;
+		else
+		i-=20;
+		t[i]='X';
+	}
+	x=r;
+	r-=20;
+	p=q;
+	q=x;
+	k=0;
+	t[p]='*';
+	t[q]='*';
+	t[r]='o';
+	delay(500);
+	clrscr();
+	for(i=0;i<20;i++)
+	{
+		for(j=0;j<20;j++)
+		{
+			cout<<t[k]<<" ";
+			k++;
+		}
+		cout<<endl;
+	}
+	}
+	}
+	if(y=='a'&&r-1!=q)
+	{
+	r-=1;
+	p=q;
+	q=x;
+	}
+	if(y=='s'&&r+20!=q)
+	{
+	r+=20;
+	p=q;
+	q=x;
+	}
+	if(y=='d'&&r+1!=q)
+	{
+	r+=1;
+	p=q;
+	q=x;
+	}
+	if(y=='w'||y=='a'||y=='s'||y=='d')
+	goto n;
+		for(l=0;!kbhit();l++)
+}

@@ -1,0 +1,33 @@
+//
+#include<stdio.h>
+main()
+{
+	int n,r,a,b=1,c,d,x,y,z=0;
+	clrscr();
+
+	printf("Enter the number:");
+	scanf("%d",&n);
+	a=n;
+	while(a!=0)
+
+	{
+		x=a%10;
+		a=a/10;
+		b=b*10;
+	}
+
+	b=b/10;
+	y=b;
+
+	while(n>0)
+	{
+		c=n/y;
+		c++;
+		z=(c*y)+z;
+		n=n%y;
+		y=y/10;
+	}
+	printf("%d",z);
+
+	getch();
+}
